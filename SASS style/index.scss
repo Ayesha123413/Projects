@@ -1,0 +1,41 @@
+/*
+variable
+*/
+
+$background: rgb(0, 242, 255);
+$bg-screen: rosybrown;
+
+body {
+  background-color: $background;
+  h1 {
+    color: black;
+  }
+}
+
+header {
+  background-color: royalblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: 14px;
+  }
+  nav {
+    a {
+      color: aliceblue;
+    }
+  }
+  button {
+    background-color: red;
+
+    &:hover {
+      background-color: aquamarine;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    background-color: $bg-screen;
+  }
+}
